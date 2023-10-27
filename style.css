@@ -1,0 +1,41 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sometype Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 4fr;
+}
+
+.nav {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: rgb(66, 175, 248);
+    color: white;
+
+}
+
+.header {
+    display: grid;
+    grid-template: 1fr 2fr / 3fr 2fr;
+}
+
+#user {
+    background-color: yellow;
+}
+
+.nav-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.nav-item>li, .nav-item>span, .nav-item>h1 {
+    display: inline;
+}
