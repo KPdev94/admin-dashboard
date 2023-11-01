@@ -3,12 +3,13 @@
     font-family: 'Sometype Mono', monospace;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     height: 100vh;
     display: grid;
-    grid-template: 2fr 5fr / 1fr 4fr;
+    grid-template: 1fr 5fr / 1fr 4fr;
 }
 
 .nav {
@@ -16,17 +17,16 @@ body {
     grid-row: 1 / 3;
     background-color: rgb(66, 175, 248);
     color: white;
-
+    padding-right: 15px;
 }
-
+h1 {
+    font-size: 24px;
+}
 .header {
     display: grid;
     grid-template: 1fr 2fr / 3fr 2fr;
     padding: 25px;
-}
-
-#user {
-    background-color: yellow;
+    padding-bottom: 8px;
 }
 
 .nav-item {
@@ -35,8 +35,116 @@ body {
     align-items: center;
     margin-left: 20px;
     margin-top: 10px;
-
 }
 .nav-item>li, .nav-item>span, .nav-item>h1 {
     display: inline;
 }
+.main {
+    display: grid;
+    grid-template: 1fr / 4fr 1fr;
+    background-color: rgb(165, 189, 214);
+}
+
+#projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template: auto 1fr / 1fr;
+    padding: 10px;
+    padding-top: 0;
+}
+#big-project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-top: 8px;
+}
+
+#announcements, #trending {
+    grid-column: 2 / 3;
+}
+#announcement-container, #trending-container {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 8px;
+    padding: 12px;
+}
+
+.project-container {
+    background-color: white;
+    border-radius: 5px;
+    border-left: 6px solid orange;
+    font-size: 12px;
+    padding: 14px;
+    display: grid;
+    grid-template: auto auto 1fr / 1fr;
+
+}
+.project-buttons {
+    align-self: end;
+    justify-self: end;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    bottom: 10px
+}
+#search-bar {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    gap: 10px;
+}
+#search {
+    flex: 1 1 auto;
+    border-radius: 12px;
+    background-color: rgb(165, 189, 214);
+    border: 0px;
+    height: 24px;
+    padding-left: 6px;
+}
+
+#greeting-pic {
+    height: 46px;
+    padding-right: 10px;
+}
+#profile-pic {
+    height: 40px;
+}
+#greeting {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+    padding-right: 0;
+}
+#noti {
+    font-size: 28px;
+ }
+ #name {
+    font-size: 20px;
+ }
+ #post-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .post-buttons {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(51, 125, 204);
+    color: white;
+    border: none;
+    border-radius: 15px;
+ }
+ .main {
+    padding-right: 20px;
+    padding-top: 20px;
+ }
+ b {
+    font-size: 16px;
+ }

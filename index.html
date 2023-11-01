@@ -9,27 +9,35 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sometype+Mono&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    </head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    </head>
     <body>
         <div class="header">
-            <input id="search" name="search" type="text">
+            <div id="search-bar">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+                <input id="search" name="search" type="text">
+            </div>
             <div id="user">
-                <icon id="notifications"></icon>
-                <img id="profile-pic">
-                <p id="name"></p>
+                <span id="noti" class="material-symbols-outlined">
+                    notifications
+                    </span>
+                <img id="profile-pic" src="./pfp.png">
+                <p id="name">Morgan Oakley</p>
             </div>
             <div id="greeting">
-                <img id="greeting-pic">
-                <p id="greeting-text">
-                    Hi there,
-                </p>
-                <p id="user-name">Morgan Oakley (@morgan)</p>
+                <img id="greeting-pic" src="./pfp.png">
+                <div id="user-greeting">
+                    <p id="greeting-text">
+                        Hi there,
+                    </p>
+                    <p id="user-name">Morgan Oakley (@morgan)</p>
+                </div>
             </div>
             <div id="post-options">
-                <button id="new">New</button>
-                <button id="upload">Upload</button>
-                <button id="share">Share</button>
+                <button class="post-buttons" id="new">New</button>
+                <button class="post-buttons" id="upload">Upload</button>
+                <button class="post-buttons" id="share">Share</button>
             </div>
         </div>
         <div class="nav">
@@ -108,91 +116,131 @@
         </div>
         <div class="main">
             <div id="projects">
-                <p>Your Projects</p>
-                <div class="project-container">
-                    <p>Very Cool Project</p>
-                    <p></p>
-                    <div id="project-buttons">
-                        <button>Like</button>
-                        <button>Watch</button>
-                        <button>Share</button>
+                <p id="project-heading"><b>Your Projects</b></p>
+                <div id="big-project-container">
+                    <div class="project-container">
+                        <p><b>Very Cool Project</b></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <div class="project-buttons">
+                            <span class="material-symbols-outlined">
+                                sentiment_satisfied
+                            </span>
+                            <span class="material-symbols-outlined">
+                                add_task
+                            </span>
+                            <span class="material-symbols-outlined">
+                                share
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-container">
-                    <p>Not So Cool Project</p>
-                    <p></p>
-                    <div class="project-buttons">
-                        <button>Like</button>
-                        <button>Watch</button>
-                        <button>Share</button>
+                    <div class="project-container">
+                        <p><b>Not So Cool Project</b></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, repellat quisquam ratione maiores nulla inventore, fugit expedita quidem consequuntur dolorum eaque pariatur dignissimos vero perspiciatis id, quae maxime aut quam.</p>
+                        <div class="project-buttons">
+                            <span class="material-symbols-outlined">
+                                sentiment_satisfied
+                            </span>
+                            <span class="material-symbols-outlined">
+                                add_task
+                            </span>
+                            <span class="material-symbols-outlined">
+                                share
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-container">
-                    <p>Impossible Task</p>
-                    <p></p>
-                    <div class="project-buttons">
-                        <button>Like</button>
-                        <button>Watch</button>
-                        <button>Share</button>
+                    <div class="project-container">
+                        <p><b>Impossible Task</b></p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi enim magnam, aspernatur laboriosam hic ab rerum nulla eum quasi rem consequuntur! Repellendus odio vero cumque impedit assumenda, distinctio ullam repudiandae.</p>
+                        <div class="project-buttons">
+                            <span class="material-symbols-outlined">
+                                sentiment_satisfied
+                            </span>
+                            <span class="material-symbols-outlined">
+                                add_task
+                            </span>
+                            <span class="material-symbols-outlined">
+                                share
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-container">
-                    <p>Minimal Effort App</p>
-                    <p></p>
-                    <div class="project-buttons">
-                        <button>Like</button>
-                        <button>Watch</button>
-                        <button>Share</button>
+                    <div class="project-container">
+                        <p><b>Minimal Effort App</b></p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="project-buttons">
+                            <span class="material-symbols-outlined">
+                                sentiment_satisfied
+                            </span>
+                            <span class="material-symbols-outlined">
+                                add_task
+                            </span>
+                            <span class="material-symbols-outlined">
+                                share
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-container">
-                    <p>FREE MONEY</p>
-                    <p></p>
-                    <div class="project-buttons">
-                        <button>Like</button>
-                        <button>Watch</button>
-                        <button>Share</button>
+                    <div class="project-container">
+                        <p><b>FREE MONEY</b></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non atque esse, quisquam odit nesciunt, blanditiis quo ea minima totam libero aliquid laboriosam corrupti fugit eveniet accusamus assumenda aliquam voluptate reiciendis!</p>
+                        <div class="project-buttons">
+                            <span class="material-symbols-outlined">
+                                sentiment_satisfied
+                            </span>
+                            <span class="material-symbols-outlined">
+                                add_task
+                            </span>
+                            <span class="material-symbols-outlined">
+                                share
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-container">
-                    <p>Ads For Hot Milfs In My Area</p>
-                    <p></p>
-                    <div class="project-buttons">
-                        <button>Like</button>
-                        <button>Watch</button>
-                        <button>Share</button>
+                    <div class="project-container">
+                        <p><b>Ads For Hot Dogs In My Area</b></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur aperiam, voluptas alias at pariatur doloribus maiores amet praesentium adipisci vero impedit labore neque quae voluptatem accusantium dignissimos quis eligendi!</p>
+                        <div class="project-buttons">
+                            <span class="material-symbols-outlined">
+                                sentiment_satisfied
+                            </span>
+                            <span class="material-symbols-outlined">
+                                add_task
+                            </span>
+                            <span class="material-symbols-outlined">
+                                share
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="announcements">
-                <p>Announcements</p>
-                <div id="container">
-                    <div>Site Maintenance</div>
-                    <div>Community Day</div>
-                    <div>Privacy Policy</div>
+            <div id="sidebar-container">
+                <div id="announcements">
+                    <p><b>Announcements</b></p>
+                    <div id="announcement-container">
+                        <div>Site Maintenance</div>
+                        <div>Community Day</div>
+                        <div>Privacy Policy</div>
+                    </div>
                 </div>
-            </div>
-            <div id="trending">
-                <p>Trending</p>
-                <div id="container">
-                    <div>
-                        <img>
-                        <p>Handle</p>
-                        <p>summary</p>
-                    </div>
-                    <div>
-                        <img>
-                        <p>Handle</p>
-                        <p>summary</p></div>
-                    <div>
-                        <img>
-                        <p>Handle</p>
-                        <p>summary</p>
-                    </div>
-                    <div>
-                        <img>
-                        <p>Handle</p>
-                        <p>summary</p>
+                <div id="trending">
+                    <p><b>Trending</b></p>
+                    <div id="trending-container">
+                        <div>
+                            <img>
+                            <p>Handle</p>
+                            <p>summary</p>
+                        </div>
+                        <div>
+                            <img>
+                            <p>Handle</p>
+                            <p>summary</p></div>
+                        <div>
+                            <img>
+                            <p>Handle</p>
+                            <p>summary</p>
+                        </div>
+                        <div>
+                            <img>
+                            <p>Handle</p>
+                            <p>summary</p>
+                        </div>
                     </div>
                 </div>
             </div>
